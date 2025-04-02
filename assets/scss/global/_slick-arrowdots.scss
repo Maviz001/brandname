@@ -1,0 +1,302 @@
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    bottom: 45px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    li {
+        height: 15px;
+
+        button {
+            background: none;
+            border: none;
+            text-indent: 9999px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $white;
+            margin: 0 8px;
+            opacity: 1;
+            padding: 0;
+        }
+
+        &.slick-active {
+            button {
+                background-color: $iSecondary;
+                opacity: 1;
+                outline: none;
+            }
+        }
+    }
+
+    .custom-pagination &{
+        li{
+            display: none;
+            &.slick-active{
+                display: block;
+            }
+        }
+    }
+
+    @media(max-width:991px) {
+        li {
+            button {
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+
+    @media(max-width:767px) {
+        bottom: 35px;
+
+        li {
+            button {
+                margin: 0 6px;
+            }
+        }
+    }
+}
+
+.sliderArrows {
+    button {
+        &.slick-arrow {
+            position: absolute;
+            background-color: $iPrimary;
+            border: none;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            padding: 0;
+            left: -25px;
+            margin: 0;
+            overflow: hidden;
+            z-index: 2;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            >i {
+                font-size: 20px;
+                color: $white;
+                font-weight: 700;
+            }
+
+            &.slick-next {
+                right: -25px;
+                left: auto;
+
+                >i {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &.slick-disabled {
+                opacity: .5;
+                cursor: not-allowed;
+
+                &:hover{
+                    >i {
+                        color: $white;
+                    }
+                }
+            }
+
+            &:hover{
+                background-color: $iSecondary;
+                >i {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.slickIndicator {
+    width: 190px;
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    .sliderArrows{
+        button {
+            &.slick-arrow {
+                position: static;
+                transform: none;
+                width: 77px;
+                height: 77px;
+                margin: 25px 0 0 0;
+                opacity: 1;
+                display: block;
+    
+                &.slick-prev {
+                    margin-top: 0;
+                }
+
+                &.slick-next {
+                    >i {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                >i {
+                    color: $iBlack;
+                    font-size: 14px;
+                }
+
+                &.slick-disabled {
+                    opacity: .5;
+                    cursor: not-allowed;
+    
+                    &:hover{
+                        >i {
+                            color: $iBlack;
+                        }
+                    }
+                }
+
+                &:hover{
+                    >i {
+                        color: $iBlack;
+                    }
+                }
+            }
+        }
+    }
+    
+    .sliderDots{
+        &.custom-pagination{
+            margin: 35px 0  30px 0;
+            .slick-dots{
+                position: static;
+                transform: none;
+                display: block;
+                li{
+                    font-size: 85px;
+                    font-weight: 500;
+                    color: $iSecondary;
+                    line-height: 1;
+                    position: relative;
+                    height: auto;
+                    transition: all .35s ease;
+
+                    &.slick-active{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-progress {
+        width: 100%;
+        display: block;
+        position: relative;
+        height: 4px;
+        background-color: $iGray;
+
+        span {
+            position: absolute;
+            height: 4px;
+            width: 0;
+            background-color: $iSecondary;
+            transition: all .35s ease;
+        }
+    }
+
+    @media(max-width:1700px){
+        width: 140px;
+        .sliderArrows{
+            button {
+                &.slick-arrow {
+                    width: 50px;
+                    height: 50px;
+                    margin: 20px 0 0 0;
+                    &.slick-prev {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .sliderDots{
+            &.custom-pagination{
+                margin: 30px 0  20px 0;
+                .slick-dots{
+                    li{
+                        @include fontCalcSize(55, 30);
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:1580px) {
+        width: 100px;
+        left: 15px;
+    }
+    @media(max-width:1500px){
+        max-width: 100%;
+        width: 100%;
+        position: static;
+        .sliderArrows,
+        .slick-progress{display: none;}
+        .sliderDots{
+            &.custom-pagination{
+                margin: 50px 0  0 0;
+                
+                .slick-dots{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        font-size: 0;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $iPrimary;
+                        margin: 0 8px;
+                        display: block;
+                        cursor: pointer;
+
+                        &.slick-active {
+                            background-color: $iSecondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:991px) {
+        .sliderDots{
+            &.custom-pagination{
+                .slick-dots{
+                    li{
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:767px) {
+        .sliderDots{
+            &.custom-pagination{
+                .slick-dots{
+                    li{
+                        margin: 0 6px;
+                    }
+                }
+            }
+        }
+    }
+}

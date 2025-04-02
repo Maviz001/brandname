@@ -1,0 +1,113 @@
+.c-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .15s linear;
+
+    .popup {
+        position: relative;
+        width: auto;
+        margin: 0.5rem;
+        pointer-events: none;
+        margin: 1.75rem auto;
+        transform: translate(0,-25%);
+        transition: transform .3s ease-out;
+        display: none;
+
+        .popup-wrap {
+            background: $white;
+            width: 100%;
+            pointer-events: auto;
+            box-shadow: 0 3px 7px 0 rgba($black, 0.25);
+            border-radius: 0.3rem;
+            position: relative;
+        }
+
+        .c-close {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            z-index: 999;
+            color: $white;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $iPrimary;
+            @include fontCalcSize(20, 14);
+            border-radius: 50%;
+            font-family: $primaryFont;
+            line-height: normal;
+            width: 38px;
+            height: 38px;
+            &:hover {
+                color: $white;
+            }
+            @media (max-width:991px){
+                top: -17px;
+                right: -12px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &.active {
+            transform: translate(0,0);
+        }
+    }
+
+    .overlay {
+        display: block;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        transition: all .3s;
+        z-index: -1;
+        position: absolute;
+    }
+
+    &.popup--open {
+        overflow-x: hidden;
+        overflow-y: auto;
+        opacity: 1;
+        padding: 0 17px;
+        background: rgba($black, .6);
+    }
+}
+
+.popup-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - (0.5rem * 2));
+    @media(min-width: 576px){
+        min-height: calc(100% - (1.75rem * 2));
+    }
+}
+
+// popups styling
+.c-popup {
+    .popup {
+        &.sm-popup {
+            max-width: 500px;
+        }
+
+        &.md-popup {
+            max-width: 750px;
+        }
+
+        &.lg-popup {
+            max-width: 1220px;
+        }
+
+        &.wd-995 {
+            max-width: 995px;
+        }
+    }
+}

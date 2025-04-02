@@ -1,0 +1,74 @@
+html,
+body {
+    @include fontCalcSize(16, 12);
+    font-family: $primaryFont;
+    color: $black;
+    font-weight: 400;
+}
+
+p {
+    @include fontCalcSize(18, 15);
+    color: $black;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0 0 20px 0;
+    strong{
+        font-weight: 600;
+    }
+}
+
+.h3 {
+    @include fontCalcSize(48, 26);
+    color: $black;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.h4 {
+    @include fontCalcSize(40, 24);
+    color: $black;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 10px 0;
+}
+
+.h5 {
+    @include fontCalcSize(16, 14);
+    color: $black;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+.heading1 {
+    .h3 {
+        text-decoration: underline;
+        @include fontCalcSize(14, 12);
+        color: $black;
+        font-weight: 700;
+        margin: 5px 0 10px 0;
+    }
+}
+
+.f {
+    &-12 {
+        @include fontCalcSize(12, 12);
+    }
+}
+
+.top-heading{
+    text-align: center;
+    margin-bottom: 30px;
+    p {
+        @include fontCalcSize(20, 16);
+        color: $iGray;
+        font-weight: 400;
+    }
+}
+
+.sub-heading{
+    @include fontCalcSize(24, 18);
+    font-weight: 400;
+    color: $iGray;
+}

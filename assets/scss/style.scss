@@ -1,0 +1,22 @@
+// include vendors scss
+@import "vendors/bootstrap.min";
+@import "vendors/slick";
+@import "vendors/intlTelInput.min";
+
+// include global scss
+@import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/icons";
+@import "global/typography";
+@import "global/form-elements";
+@import "global/base";
+@import "global/global";
+@import "global/thumbnials";
+@import "global/slick-arrowdots";
+
+// include components scss
+@import "components/header";
+@import "components/footer";
+@import "components/banners";
+@import "components/main";
