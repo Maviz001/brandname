@@ -12,7 +12,14 @@
         min-height: 600px;
     }
     @media (max-width:575px){
-        min-height: 630px;
+        min-height: 480px;
+        .service-content{
+            padding: 20px 20px 30px;
+            a{
+                bottom: 15px;
+                left: 20px;
+            }
+        }
     }
 }
 
