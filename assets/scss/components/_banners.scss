@@ -83,7 +83,7 @@
     }
 
     &-inner{
-        padding: 150PX 0 100px;
+        padding: 100PX 0 50px;
         height: 85vh;
         .banner-content{
             .sm-heading{
@@ -113,7 +113,7 @@
         }
         @media(max-width:991px) {
             height: auto;
-            padding: 100px 0 50px;
+            padding: 70px 0 50px;
             .banner-content{
                 text-align: left;
             }

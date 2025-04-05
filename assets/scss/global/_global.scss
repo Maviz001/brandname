@@ -125,3 +125,51 @@
         }
     }
 }
+
+.ppc-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $ppc-primary !important;
+        }
+
+        &-iPink {
+            background-color: $ppc-secondary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $ppc-primary !important;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $ppc-primary;
+            border-color: $ppc-primary;
+            font-weight: 700;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $ppc-primary;
+            }
+        }
+    }
+    .blog-content{
+        a{
+            color: $ppc-primary;
+            &:hover{
+                color: $iPrimary;
+            }
+        }
+    }
+    .news-form{
+        .btn-secondary{
+            background-color: $ppc-secondary;
+            border-color: $ppc-secondary;
+        }
+    }
+}
