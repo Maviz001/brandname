@@ -276,7 +276,7 @@ select {
     @include fontCalcSize(14, 12);
     font-family: $primaryFont;
     font-weight: 500;
-    padding: 10px 25px !important;
+    padding: 12px 35px !important;
     border-radius: 28px;
     text-align: center;
 
@@ -326,6 +326,105 @@ select {
         &:focus {
             background-color: $iPrimary;
             border-color: $iPrimary;
+        }
+    }
+
+    &.btn-purple {
+        background-color: $purple;
+        border-color: $purple;
+        color: $white;
+        font-weight: 700;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($black, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
+    &.btn-green {
+        background-color: $seagreen;
+        border-color: $seagreen;
+        color: $white;
+        font-weight: 700;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($black, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
+    &.btn-blue {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+        font-weight: 700;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($black, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
+    &.btn-white {
+        @include fontCalcSize(21 , 15);
+        background-color: $white;
+        border-color: $white;
+        color: $seo-primary;
+        padding: 20px 60px !important;
+        border-radius: 45px;
+
+        @media (max-width:991px){
+            padding: 13px 30px !important;
+        }
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($white, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+            color: $white
         }
     }
 

@@ -1,0 +1,127 @@
+.flex-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:991px) {
+        position: static;
+        margin: 0 auto 20px;
+    }
+}
+
+.flex {
+    &-42 {
+        flex: 0 0 42%;
+        max-width: 42%; 
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+
+        &.left{
+            .rec-shape{
+                right: inherit;
+                left: 0;
+            }
+            .img-box{
+                right: -20px;
+                left: inherit;
+                box-shadow: 10px 0px 30px rgba(0,0,0,0.15)  ;
+            }
+        }
+
+        @media (max-width:991px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &-50 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @media (max-width:991px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &-58 {
+        flex: 0 0 58%;
+        max-width: 58%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @media (max-width:991px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}                
+
+.rec-shape{
+    position: absolute;
+    height: calc(100% + 60px);
+    top: -30px;
+    right: 0;
+    width: 135px;
+    z-index: -1;
+    @media (max-width:991px){
+        height: calc(100% + 40px);
+        top: -20px;
+    }
+}
+
+.seo-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $seo-primary !important;
+        }
+
+        &-iPink {
+            background-color: $seo-secondary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $seo-primary !important;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $seo-primary;
+            border-color: $seo-primary;
+            font-weight: 700;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $seo-primary;
+            }
+        }
+    }
+    .blog-content{
+        a{
+            color: $seo-primary;
+            &:hover{
+                color: $iPrimary;
+            }
+        }
+    }
+    .news-form{
+        .btn-secondary{
+            background-color: $pink;
+            border-color: $pink;
+        }
+    }
+}
