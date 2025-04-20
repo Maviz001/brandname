@@ -1,25 +1,64 @@
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    .form-ic{
+        font-size: 20px;
+        color: $iPrimary;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        line-height: 0;
+        i{
+            font-weight: 700;
+        }
+    }
+    &.queryarea{
+        height: 100%;
+        .form-ic{
+            top: 22px;
+            @media(max-width:767px){
+                top: 21px;
+            }
+        }
+        .form-control{
+            padding-left: 15px;
+        }
+    }
+
+    @media (max-width:991px){
+        margin-bottom: 15px !important;
+        &.queryarea{
+            height: auto;
+        }
+    }
 }
 
 .textarea,
 .form-control {
-    @include fontCalcSize(14, 12);
+    font-size: 14px;
     color: $black;
     background-color: $white;
     line-height: normal;
     font-weight: 400;
     width: 100%;
-    padding: 12px 10px;
-    border-radius: 4px;
-    height: 40px;
+    padding: 12px 10px 12px 50px;
+    border-radius: 6px;
+    height: 75px;
     text-align: left;
     border: 1px solid transparent;
+    font-weight: 500;
     transition: all .35s ease;
-    @include placeholder($iGray);
+ 
+    &::placeholder{
+        color: $iGray5;
+    }
 
     &.is--error {
         border-color: red;
+    }
+    &.error-field {
+        border-color: red !important;
     }
 
     &[read-only] {
@@ -42,6 +81,26 @@
 
     &:focus {
         box-shadow: none;
+    }
+
+    @media (max-width:1199px){
+        height: 55px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 13px;
+        height: 40px;
+    }
+}
+textarea{
+    &.form-control{
+        height: 100%;
+    }
+
+    @media (max-width:991px){
+        &.form-control{
+            height: 150px;
+        }
     }
 }
 
@@ -398,11 +457,34 @@ select {
         }
     }
 
+    &.btn-pink {
+        background-color: $baby-pink;
+        border-color: $baby-pink;
+        color: $white;
+        font-weight: 700;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($black, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+
     &.btn-white {
         @include fontCalcSize(21 , 15);
         background-color: $white;
         border-color: $white;
-        color: $seo-primary;
+        color: $iPrimary;
         padding: 20px 60px !important;
         border-radius: 45px;
 
@@ -549,4 +631,12 @@ button,
         transform: translateY(0);
         height: auto;
     }
+}
+
+.successMessage{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+    color: white;
 }

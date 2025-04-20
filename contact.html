@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--#include virtual="/includes/brand-info.asp"-->
+	<title>Contact Us | <%=brandName%></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <link rel="preload" href="assets/css/style.min.css" as="style">
+    <link rel="preload" href="assets/icons/fonts/xicons.ttf?e98pql" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/x-icon" size="16x16" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css"/>
+</head>
+
+<body>
+	    <header class="header js-fixed">
+        <div class="container">
+            <div class="fflex">
+                <a href="/" class="logo">
+                    <img src="assets/img/brand/logo.svg" alt="" class="js-tosvg">
+                </a>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/our-services/">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="/our-clients/">Our Clients</a>
+                        </li>
+                        <li>
+                            <a href="/pricing/">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="/about-us/">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/blog/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us/">Contact Us</a>
+                        </li>
+                        <li class="d-block d-lg-none">
+                            <a href="mailto:<%=brandTFN%>" class="btn btn-primary"><%=brandTFN%></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-wrap d-none d-lg-block">
+                    <a href="mailto:<%=brandTFN%>" class="btn btn-primary">X-XXX-XXX-XXXX</a>
+                </div>
+                <div class="nav-hamburger js-menubtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>  
+        <div class="defaultOverlay js-defaultOverlay"></div>
+    </header>
+
+
+    <div class="banner-inner bg-detail" style="background-image: url(/assets/img/bg/blog.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-content-center">
+                <div class="col-lg-9">
+                    <div class="banner-content">
+                        <h1 class="h1"><span class="bgc-iPrimary">Contact</span> Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="stripe-4 bg-detail" style="background-image: url(/assets/img/bg/content.jpg);">
+        <div class="overlay social-market"></div>
+        <div class="container">
+            <div class="top-heading position-relative">
+                <h3 class="h3 cl-white text-uppercase">If You Have Any Query Fill This Form.    </h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="form-area">
+                        <form method="POST" id="form" novalidate>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="hidden" name="access_key" value="ae4f1da4-f11b-424c-9930-e390fb786f09">
+                                        <input type="hidden" name="subject" id="subject" value="">
+                                        <input type="checkbox" name="botcheck" id="" style="display: none;">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Full Name" required>
+                                        <div class="form-ic">
+                                            <i class="ic-9"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email Address" required>
+                                        <div class="form-ic">
+                                            <i class="ic-10"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group iti-group mb-0">
+                                        <input type="hidden" name="countryname" class="countryname">
+                                        <input type="hidden" name="countrycode" class="countrycode">
+                                        <input type="hidden" name="dialcode" class="dialcode">
+                                        <input type="tel" class="form-control js-byphone" placeholder="Enter Phone No." name="phone" id="phone" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-lg-6">
+                                    <div class="form-group queryarea">
+                                        <textarea name="message" class="form-control" id="message" placeholder="Query or Reason for contact:" required></textarea>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area mt-5 text-center position-relative">
+                                <button type="submit" class="btn btn-form btn-secondary js-submitbtn" value="0"><i class="ic-14"></i> SUBMIT</button>
+                                <div class="successMessage" style="display:none;">Your form has been submitted</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<footer class="footer">
+        <div class="sec-footertop">
+            <div class="overlay"></div>
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6">
+                            <div class="logo-widget">
+                                <a href="/">
+                                    <img src="assets/img/brand/logo.png" alt="">
+                                </a>
+                                <div class="link-widget d-none d-lg-block">
+                                    <ul>
+                                        <li><a href="javascript:;">Home</a></li>
+                                        <li><a href="javascript:;">Our Services</a></li>
+                                        <li><a href="javascript:;">Our Clients</a></li>
+                                        <li><a href="javascript:;">Pricing</a></li>
+                                        <li><a href="javascript:;">About Us</a></li>
+                                        <li><a href="javascript:;">Blogs</a></li>
+                                        <li><a href="javascript:;">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm-6 d-block d-lg-none" >
+                                    <div class="link-widget ">
+                                        <ul>
+                                            <li><a href="javascript:;">Home</a></li>
+                                            <li><a href="javascript:;">Our Services</a></li>
+                                            <li><a href="javascript:;">Our Clients</a></li>
+                                            <li><a href="javascript:;">Pricing</a></li>
+                                            <li><a href="javascript:;">About Us</a></li>
+                                            <li><a href="javascript:;">Blogs</a></li>
+                                            <li><a href="javascript:;">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">PPC Management</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Google Ads</a></li>
+                                            <li><a href="javascript:;">Facebook Ads</a></li>
+                                            <li><a href="javascript:;">Retargeting Ads</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">SEO Services</div>
+                                        <ul>
+                                            <li><a href="javascript:;">On-Page SEO</a></li>
+                                            <li><a href="javascript:;">Off-Page SEO</a></li>
+                                            <li><a href="javascript:;">Technical SEO</a></li>
+                                            <li><a href="javascript:;">Local SEO</a></li>
+                                            <li><a href="javascript:;">SEO Audits</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">Social Media Marketing</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Social Media Strategy</a></li>
+                                            <li><a href="javascript:;">Social Media Ads</a></li>
+                                            <li><a href="javascript:;">Community Management</a></li>
+                                            <li><a href="javascript:;">On-Page SEO</a></li>
+                                            <li><a href="javascript:;">Influencer Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">Content Marketing</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Blog Writing</a></li>
+                                            <li><a href="javascript:;">Email Campaigns</a></li>
+                                            <li><a href="javascript:;">Community Management</a></li>
+                                            <li><a href="javascript:;">Copywriting Services</a></li>
+                                            <li><a href="javascript:;">Content Strategy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">Web Design & 
+                                            Development</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Website Creation</a></li>
+                                            <li><a href="javascript:;">Landing Pages</a></li>
+                                            <li><a href="javascript:;">E-commerce Websites</a></li>
+                                            <li><a href="javascript:;">Website Redesign</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">Branding & 
+                                            Graphic Design</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Logo Design</a></li>
+                                            <li><a href="javascript:;">Brand Strategy</a></li>
+                                            <li><a href="javascript:;">Visual Identity</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <div class="link-widget">
+                                        <div class="h5">Analytics & 
+                                            Reporting</div>
+                                        <ul>
+                                            <li><a href="javascript:;">Google Analytics Setup</a></li>
+                                            <li><a href="javascript:;">Data Analysis</a></li>
+                                            <li><a href="javascript:;">Conversion Rate Optimization (CRO)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-footerbottom">
+            <div class="container">
+                <div class="social-sec">
+                    <div class="rss-img">
+                        <img src="assets/img/brand/rss-logo.png" alt="">
+                    </div>
+                    <div class="social-icon">
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                    <div class="icon"><i class="ic-6"></i></div>
+                </div>
+                </div>
+                <div class="sec-copyright">
+                    <div class="container">
+                        <div class="fflex">
+                            <p>© Copyright <span class="copyrightyear"></span> <%=brandName%>. All Rights Reserved.</p>
+                            <ul class="copyright-links">
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="/contact-us/">Terms of Service</a></li>
+                                <li><img src="assets/img/brand/protected.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="disclaimer-sec">
+                    <p class="mb-2">Disclaimer</p>
+                    <p>The logo, name and graphics of Brand Logo and its products and services are the trademarks of Brand Logo. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by Researchomatic and do not constitute or imply endorsement, sponsorship or recommendation of Brand Logo by the respective trademark owner. Furthermore, Brand Logo strongly discourages plagiarism and regard it as a serious intellectual offense. We have zero-tolerance policy for plagiarists who cheat their professors by copying someone else's work and presenting it as their own.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script type="text/javascript" src="assets/js/vendors.js?"></script>
+    <!-- <script type="text/javascript" src="assets/js/fingerPrint.js?"></script> -->
+    <script type="text/javascript" src="assets/js/functions.js?"></script>
+</body>
+</html>

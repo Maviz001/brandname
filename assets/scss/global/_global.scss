@@ -72,10 +72,6 @@
     right: 0;
     width: 135px;
     z-index: -1;
-    @media (max-width:991px){
-        height: calc(100% + 40px);
-        top: -20px;
-    }
 }
 
 .seo-page {
@@ -100,6 +96,9 @@
             background-color: $seo-primary;
             border-color: $seo-primary;
             font-weight: 700;
+        }
+        &.btn-white{
+            color: $seo-primary;
         }
     }
     .service-head{
@@ -126,6 +125,168 @@
     }
 }
 
+.web-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $web-primary !important;
+        }
+
+        &-iPink {
+            background-color: $seo-secondary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $web-primary !important;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $web-primary;
+            border-color: $web-primary;
+            font-weight: 700;
+        }
+        &.btn-white {
+            color: $web-primary;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $web-primary;
+            }
+        }
+    }
+    .blog-content{
+        a{
+            color: $web-primary;
+            &:hover{
+                color: $iPrimary;
+            }
+        }
+    }
+    // .news-form{
+    //     .btn-secondary{
+    //         background-color: $pink;
+    //         border-color: $pink;
+    //     }
+    // }
+}
+
+.content-marketing-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $seagreen !important;
+        }
+
+        &-iPink {
+            background-color: $seo-secondary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $seagreen !important;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $seagreen;
+            border-color: $seagreen;
+            font-weight: 700;
+        }
+        &.btn-white {
+            color: $seagreen;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $seagreen;
+            }
+        }
+    }
+    .blog-content{
+        a{
+            color: $seagreen;
+            &:hover{
+                color: $iPrimary;
+            }
+        }
+    }
+    // .news-form{
+    //     .btn-secondary{
+    //         background-color: $pink;
+    //         border-color: $pink;
+    //     }
+    // }
+}
+
+.brand-marketing-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $brand-primary !important;
+        }
+
+        &-iPink {
+            background-color: $seo-secondary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $brand-primary !important;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $brand-primary;
+            border-color: $brand-primary;
+            font-weight: 700;
+        }
+        &.btn-white {
+            color: $brand-primary;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $brand-primary;
+            }
+        }
+    }
+    .flex-42{
+        height: 500px;
+        @media (max-width:991px){
+            height: auto;
+        }
+    }
+    .approach-sec{
+        background-color: #DBEAFE;
+    }
+    .blog-content{
+        a{
+            color: $brand-primary;
+            &:hover{
+                color: $iPrimary;
+            }
+        }
+    }
+    // .news-form{
+    //     .btn-secondary{
+    //         background-color: $pink;
+    //         border-color: $pink;
+    //     }
+    // }
+}
+
 .ppc-page {
     .bgc {
         &-iPrimary {
@@ -133,7 +294,7 @@
         }
 
         &-iPink {
-            background-color: $ppc-secondary !important;
+            background-color: $iSecondary !important;
         }
     }
 
@@ -143,11 +304,21 @@
         }
     }
 
+    .news-content{
+        .h3, p{
+            color: $black !important;
+        }
+        &::before{
+            background-color: $black;
+        }
+    }
+
     .btn {
         &.btn-primary {
             background-color: $ppc-primary;
             border-color: $ppc-primary;
             font-weight: 700;
+            color: $black;
         }
     }
     .service-head{
@@ -155,6 +326,7 @@
             font-weight: 600;
             &:hover{
                 background-color: $ppc-primary;
+                color: $black;
             }
         }
     }
@@ -168,8 +340,64 @@
     }
     .news-form{
         .btn-secondary{
+            background-color: $iSecondary;
+            border-color: $iSecondary;
+        }
+        p{
+            color: $black;
+        }
+    }
+}
+
+.social-page {
+    .bgc {
+        &-iPrimary {
+            background-color: $social-primary !important;
+        }
+    }
+
+    .cl {
+        &-iPrimary {
+            color: $social-primary !important;
+        }
+    }
+
+    .btn {
+        font-weight: 700;
+        &.btn-primary {
+            background-color: $social-primary;
+            border-color: $social-primary;
+            color: $white;
+        }
+        &.btn-white{
+            color: $social-primary;
+        }
+    }
+    .service-head{
+        a{
+            font-weight: 600;
+            &:hover{
+                background-color: $social-primary;
+            }
+        }
+    }
+    .blog-content{
+        a{
+            color: $social-primary;
+        }
+    }
+    .news-form{
+        .btn-secondary{
             background-color: $ppc-secondary;
             border-color: $ppc-secondary;
+        }
+    }
+}
+
+.social-sec{
+    .sec-img{
+        @media (max-width:991PX){
+            margin:10PX 0;
         }
     }
 }

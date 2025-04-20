@@ -5,7 +5,7 @@
 		<div class="popup-wrap">
 			<a href="javascript:;" class="c-close js-close-popup">✖</a>
 			<div class="popupContent">
-				<img src="/assets/img/letters/letter-1.jpg" alt="">
+				<img src="assets/img/letters/letter-1.jpg" alt="">
 			</div>
 		</div>
 		<div class="popup-foot"></div>

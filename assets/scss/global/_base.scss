@@ -122,6 +122,45 @@ input::-ms-clear {
         background-image: linear-gradient(0deg, rgba(0,0,0,1) -40%, rgba(255,255,255,1) 100%);
         mix-blend-mode: multiply;
     }
+    &.yellow{
+        background-color: rgba($yellow , 0.8);
+    }
+    &.seo{
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FF8E8E;
+        background-image: linear-gradient(0deg, #000000 -25%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    &.ppc{
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F3AF1F;
+        background-image: linear-gradient(0deg, #000000 -25%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    &.social-market{
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #526CF6;
+        background-image: linear-gradient(0deg, #000000 -25%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    &.web{
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #AF52DE;
+        background-image: linear-gradient(0deg, #000000 -100%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    &.cont{
+        background-color: transparent;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #43C89C;
+        background-image: linear-gradient(0deg, #000000 -100%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    &.brand{
+        background-color: transparent;
+        background: rgba(#3A62FF, 0.7);
+        background-image: linear-gradient(0deg, #000000 -100%, rgba(255, 255, 255, 0) 100%);
+        mix-blend-mode: multiply;
+    }
 }
 
 .is--menu {
@@ -155,6 +194,10 @@ input::-ms-clear {
 
     &-black {
         background-color: $black;
+    }
+    
+    &-ilight-pink {
+        background-color: $baby-pink;
     }
 
     &-blue {
@@ -192,6 +235,24 @@ input::-ms-clear {
     &-1 {
         background: $banner-gradient;
     }
+    &-2{
+        background: linear-gradient(180deg, #FFE8E8 0%, #FFFFFF 100%);
+    }
+    &-3{
+        background: linear-gradient(180deg, #FFE09F 0%, #FFFFFF 100%);
+    }
+    &-4{
+        background: linear-gradient(180deg, #D9DFFF 0%, #FFFFFF 100%);
+    }
+    &-5{
+        background: linear-gradient(180deg, #F4DEFF 0%, #FFFFFF 100%);
+    }
+    &-6{
+        background: linear-gradient(180deg, #E6FFF7 0%, #FFFFFF 100%);
+    }
+    &-7{
+        background: linear-gradient(180deg, #EAF8FF 0%, #FFFFFF 100%);
+    }
 }
 
 .cl {
@@ -205,6 +266,10 @@ input::-ms-clear {
 
     &-blue {
         color: $blue;
+    }
+
+    &-ilight-pink {
+        color: $baby-pink;
     }
 
     &-white {
@@ -258,6 +323,9 @@ input::-ms-clear {
         @media(max-width:991px) {
             padding: 50px 0 0;
         }
+        @media(max-width:420px) {
+            padding: 30px 0 0;
+        }
     }
     &-4 {
         padding: 100px 0;
@@ -265,6 +333,14 @@ input::-ms-clear {
 
         @media(max-width:991px) {
             padding: 50px 0;
+        }
+    }
+    &-5 {
+        padding: 80px 0;
+        position: relative;
+
+        @media(max-width:991px) {
+            padding: 40px 0;
         }
     }
 }
@@ -429,6 +505,10 @@ input::-ms-clear {
 .rad{
     &-10{
         border-radius: 10px;
+        overflow: hidden;
+    }
+    &-12{
+        border-radius: 12px;
         overflow: hidden;
     }
     &-20{

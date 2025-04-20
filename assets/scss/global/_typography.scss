@@ -55,6 +55,9 @@ p {
     &-12 {
         @include fontCalcSize(12, 12);
     }
+    &-24 {
+        @include fontCalcSize(24, 17);
+    }
 }
 .fw{
     &-400{

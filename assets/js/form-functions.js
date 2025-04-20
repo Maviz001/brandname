@@ -120,7 +120,7 @@ function initIntlInput(target) {
 				nationalMode: true,
 				separateDialCode: true,
 				autoPlaceholder: 'polite',
-				utilsScript: "/assets/js/utils.js",
+				utilsScript: "assets/js/utils.js",
 			});
 			setTimeout(function(){
 				var changeCountry = $e.intlTelInput("getSelectedCountryData");
